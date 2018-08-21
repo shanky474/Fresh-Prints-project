@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <link rel="stylesheet" type="text/css" href="Tshirt.css">
+<!----  <script src="https://apis.google.com/js/api.js"></script> ---->
+  <script src="Tshirt.js"></script>
+ </head>
+
+<body>
+<div id="canvas-wrapper" class="editor-area">
+  <div class="canvas-bg-wrapper">
+    <img class="canvas-bg" alt="" src="https://asda.scene7.com/is/image/Asda/5054924279078_A?hei=560&qlt=85&fmt=pjpg&resmode=sharp&op_usm=1.1,0.5,0,0&defaultimage=default_details_George_rd">
+      <canvas width="260" height="360" id="c"></canvas>
+  </div>
+</div>
+
+<div class="controls">
+  
+<input type="file" id="imgLoader"><br>
+  <button onClick="insertText()">Import Text</button>
+
+  <div id="textMenu" class="hideOperations">
+      <button id="underline">Underline</button>
+  <input type="range" min="5" max="150" value="40" id="size">
+    <input type="range" min="0.1" max="5" value="0.1" id="height">
+  <input type="color" id="color">
+  <input type="color" id="bg-color">
+  <button id="italic">Slope</button>
+  <button id="centered">Center</button>
+  <button id="left">Left</button>
+  <button id="right">Right</button>
+  </div>
+  <button onClick="insertShape()">Insert Shape</button>
+  <button onClick="deleteObjects()">Remove Selected</button>
+</div>
+
+</body>
+
+</html>
